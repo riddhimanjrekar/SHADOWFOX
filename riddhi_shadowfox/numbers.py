@@ -41,3 +41,4 @@ speed = distance / time_seconds
 print("3. Speed in meters/second:", int(speed))
 
 
+
