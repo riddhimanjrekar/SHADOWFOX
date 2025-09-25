@@ -14,7 +14,7 @@ print("-" * 40)
 radius = 84  
 pi = 3.14
 
-# Formula: Area = π * r^2
+# Formula (Area = π * r^2)
 pond_area = pi * (radius ** 2)
 print("2. Area of the Pond:", pond_area)
 
@@ -34,9 +34,10 @@ time_minutes = 7
 
 time_seconds = time_minutes * 60  
 
-# Formula: Speed = Distance / Time
+# Formula (Speed = Distance / Time)
 speed = distance / time_seconds
 
-# Print speed without decimal point
+# Print
 print("3. Speed in meters/second:", int(speed))
+
 
