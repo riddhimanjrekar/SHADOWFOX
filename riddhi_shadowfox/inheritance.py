@@ -1,6 +1,4 @@
-# ---------------------------------------------
-# Base Class: MobilePhone
-# ---------------------------------------------
+# inheritance 
 class MobilePhone:
     def __init__(self, screen_type, network_type, dual_sim, front_camera, rear_camera, ram, storage):
         self.screen_type = screen_type
@@ -11,7 +9,6 @@ class MobilePhone:
         self.ram = ram
         self.storage = storage
 
-    # Common functionalities
     def make_call(self, number):
         print(f"Calling {number}...")
 
@@ -33,12 +30,10 @@ class MobilePhone:
         print("----------------------------")
 
 
-# ---------------------------------------------
-# Child Class: Apple
-# ---------------------------------------------
+
+# this is child class for Apple
 class Apple(MobilePhone):
     def __init__(self, model, front_camera, rear_camera, ram, storage):
-        # Call parent constructor using super()
         super().__init__("Touch Screen", "5G", False, front_camera, rear_camera, ram, storage)
         self.model = model
 
@@ -50,12 +45,10 @@ class Apple(MobilePhone):
         super().phone_details()
 
 
-# ---------------------------------------------
-# Child Class: Samsung
-# ---------------------------------------------
+
+# this is child class for Samsung
 class Samsung(MobilePhone):
     def __init__(self, model, dual_sim, front_camera, rear_camera, ram, storage):
-        # Call parent constructor using super()
         super().__init__("Touch Screen", "4G/5G", dual_sim, front_camera, rear_camera, ram, storage)
         self.model = model
 
@@ -67,13 +60,12 @@ class Samsung(MobilePhone):
         super().phone_details()
 
 
-# ---------------------------------------------
-# Creating Apple objects
-# ---------------------------------------------
+
+# Created objects for apple here
 iphone1 = Apple("iPhone 13", "12MP", "48MP", "4GB", "64GB")
 iphone2 = Apple("iPhone SE", "8MP", "12MP", "3GB", "32GB")
 
-# Display details
+# for display details, we use
 iphone1.phone_details()
 iphone1.make_call("9876543210")
 iphone1.face_id()
@@ -81,16 +73,16 @@ iphone1.face_id()
 iphone2.phone_details()
 iphone2.take_a_picture()
 
-# ---------------------------------------------
-# Creating Samsung objects
-# ---------------------------------------------
+
+# Created objects for samsung here
 samsung1 = Samsung("Galaxy S21", True, "16MP", "48MP", "4GB", "64GB")
 samsung2 = Samsung("Galaxy A32", True, "8MP", "32MP", "3GB", "32GB")
 
-# Display details
+# for display details, we use
 samsung1.phone_details()
 samsung1.receive_call("John")
 samsung1.use_stylus()
 
 samsung2.phone_details()
 samsung2.make_call("1234567890")
+
