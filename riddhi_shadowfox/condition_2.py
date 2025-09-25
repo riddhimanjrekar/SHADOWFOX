@@ -1,14 +1,14 @@
-# Program to determine which country a city belongs to
+# if condition program Q2
 
-# Step 1: Define the lists of cities for each country
+#Define the lists of cities for each country
 Australia = ["Sydney", "Melbourne", "Brisbane", "Perth"]
 UAE = ["Dubai", "Abu Dhabi", "Sharjah", "Ajman"]
 India = ["Mumbai", "Bangalore", "Chennai", "Delhi"]
 
-# Step 2: Take user input
+#Take user input
 city = input("Enter a city name: ")
 
-# Step 3: Check which country the city belongs to
+# to check which country the city belongs to
 if city in Australia:
     print(f"{city} is in Australia")
 elif city in UAE:
@@ -17,3 +17,4 @@ elif city in India:
     print(f"{city} is in India")
 else:
     print(f"Sorry, {city} is not in our list.")
+
